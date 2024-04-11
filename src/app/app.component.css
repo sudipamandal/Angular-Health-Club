@@ -1,0 +1,101 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+  background-color: #004d99;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar button {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #fff;
+  color: #004d99;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #004d99;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.foot {
+  margin: 0;
+}
+
+/* Help Section */
+.help {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.test {
+  flex: 1;
+}
+
+.head {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.element {
+  margin-bottom: 10px;
+}
+
+/* Utility Classes */
+.test:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header,
+  .help {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar button {
+    margin-bottom: 10px;
+  }
+
+  .test:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

@@ -1,15 +1,37 @@
-<div class="logo">
-
+<div class="header">
+  <div class="logo">
+    LOGO
+  </div>
+  <div class="navbar">
+    <button (click)="landingpage()">Home</button><br>
+    <button (click)="placeAppointment()">Place Appointment</button><br>
+    <button (click)="viewAppointment()">View Appointment</button><br>
+    <button (click)="contactUspage()">Contact Us</button>
+  </div>
 </div>
-<div class="navbar">
 
-</div>
-
-<div class="sidebar">
-  <button (click)="landingpage()">Home</button><br>
-  <button (click)="placeAppointment()">Place Appointment</button><br>
-  <button (click)="viewAppointment()">View Appointment</button><br>
-  <button (click)="contactUspage()">Contact Us</button>
-
-</div>
 <router-outlet></router-outlet>
+
+<div class="help">
+
+  <div class="contact test">
+    <div class="head">Contact</div>
+    <div class="element">Company Address</div>
+    <div class="element">Company Email</div>
+    <div class="element">Company Phone</div>
+    <div class="element">Company Fax</div>
+  </div>
+
+  <div class="useful test">
+    <div class="head">Useful Links</div>
+    <div class="element">Home</div>
+    <div class="element">View Appointments</div>
+    <div class="element">Place Appointment</div>
+    <div class="element">Contact Us</div>
+  </div>
+</div>
+
+
+<div class="footer">
+  <p class="foot">©2024 IBM Corporation</p>
+</div>

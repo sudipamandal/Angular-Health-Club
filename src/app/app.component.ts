@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 import { Router } from "@angular/router";
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html'
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  title = 'angularSPA';
-  constructor(private router: Router) { }
+  title = "angularSPA";
+  constructor(private router: Router) {}
   landingpage() {
     this.router.navigateByUrl("landing-page");
   }
